@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Candidate</title>
+</head>
+<body>
+    <h2>Add a Candidate</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Candidate</button>
+    </form>
+</body>
+</html>
