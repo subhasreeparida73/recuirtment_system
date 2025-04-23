@@ -1,0 +1,14 @@
+<h2>Candidate Rankings</h2>
+<table border="1">
+  <tr>
+    <th>Name</th><th>Score</th><th>Skills</th><th>Experience</th>
+  </tr>
+  {% for candidate in candidates %}
+  <tr>
+    <td>{{ candidate.first_name }} {{ candidate.last_name }}</td>
+    <td>{{ candidate.score }}</td>
+    <td>{{ candidate.skills }}</td>
+    <td>{{ candidate.experience_years }} years</td>
+  </tr>
+  {% endfor %}
+</table>

@@ -17,6 +17,13 @@ class Candidate(models.Model):
     email = models.EmailField(unique=True)
     resume = models.FileField(upload_to='resumes/')
     job = models.ForeignKey(Job, on_delete=models.CASCADE)
+    skills = models.TextField(blank=True, null=True)
+    experience_years = models.IntegerField(default=0)
+    score = models.FloatField(default=0.0)
+
+    def _str_(self):
+        return f"{self.first_name} {self.last_name}"
+
 
     def _str_(self):
         return f"{self.first_name} {self.last_name}"

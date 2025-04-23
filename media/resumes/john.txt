@@ -1,0 +1,8 @@
+John Doe
+Email: john@example.com
+
+Experience:
+- 4 years of experience in Python, Django, and Flask
+- Worked with TensorFlow, Numpy, Pandas
+
+Skills: Python, Django, SQL, TensorFlow, Numpy, Git
